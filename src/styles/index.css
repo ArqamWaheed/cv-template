@@ -48,3 +48,70 @@ h6 {
   isolation: isolate;
 }
 
+:root {
+  --bg-dark: oklch(0.92 0 130);
+  --bg: oklch(0.96 0 130);
+  --bg-light: oklch(1 0 130);
+  --text: oklch(0.15 0 130);
+  --text-muted: oklch(0.4 0 130);
+  --highlight: oklch(1 0 130);
+  --border: oklch(0.6 0 130);
+  --border-muted: oklch(0.7 0 130);
+  --primary: oklch(0.4 0.1 130);
+  --secondary: oklch(0.4 0.1 310);
+  --danger: oklch(0.5 0.05 30);
+  --warning: oklch(0.5 0.05 100);
+  --success: oklch(0.5 0.05 160);
+  --info: oklch(0.5 0.05 260);
+}
+
+header h1 {
+  width: fit-content;
+  margin: 32px auto;
+  color: var(--text);
+}
+
+body {
+  background-color: var(--bg-dark);
+  min-height: 100svh;
+}
+
+#root {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
+  max-width: 1200px;
+  display: flex;
+  gap: 16px;
+}
+
+.formDiv {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  flex-grow: 0.8;
+  max-width: 40%;
+  background-color: var(--bg);
+  padding: 32px;
+}
+
+.formDiv legend {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.formDiv fieldset {
+  border: none;
+}
+
+.CVDiv {
+  border: 1px solid var(--border);
+  flex-grow: 1;
+  background-color: var(--bg);
+}
+
+@media (max-width: 768px) {
+  #root {
+    flex-direction: column;
+  }
+}

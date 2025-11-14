@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function App() {
+function GeneralInfo() {
 
   return (
     <>
@@ -8,5 +8,3 @@ function App() {
     </>
   )
 }
-
-export default App

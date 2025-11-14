@@ -1,12 +1,14 @@
 import { useState } from 'react'
+import CV from './CV';
 
-export default function GeneralInfo() {
+export default function GeneralInfo({generalInfo, setNameValue}) {
+
     return (
-        <fieldset>
+        <fieldset className="GeneralInfo">
             <legend>General Information</legend>
             <div>
                 <label for="fullName">Full Name <span class="mandatory">*</span></label>
-                <input type="text" id="fullName" required aria-required="true"></input>
+                <input type="text" id="fullName" required aria-required="true" onChange={e => setNameValue(e.target.value)}></input>
             </div>
             <div>
                 <label for="emailId">Email <span class="mandatory">*</span></label>

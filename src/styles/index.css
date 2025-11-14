@@ -76,7 +76,7 @@ header h1 {
   color: var(--text);
 }
 
-body {
+body {  
   background-color: var(--bg-dark);
   min-height: 100svh;
 }
@@ -95,7 +95,7 @@ body {
     flex-direction: column;
   }
 
-  .formDiv {
+  #root .formDiv {
     max-width: 100%;
   } 
 }

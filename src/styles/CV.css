@@ -1,0 +1,6 @@
+.CVDiv {
+  border: 1px solid var(--border);
+  flex-grow: 1;
+  background-color: var(--bg);
+  height: 80vh;
+}

@@ -1,0 +1,61 @@
+.formDiv {
+  color: var(--text);
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  flex-grow: 0.8;
+  max-width: 40%;
+  background-color: var(--bg);
+  padding: 32px;
+}
+
+.formDiv form {
+  width: 100%;
+}
+
+.formDiv legend {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.formDiv fieldset {
+  border: none;
+}
+
+.formDiv input {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  height: 30px;
+  padding: 4px 8px;
+}
+
+.formDiv fieldset label {
+  font-weight: 500;   
+}
+
+.formDiv fieldset div {
+  flex-direction: column;
+  display: flex;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.formDiv .mandatory {
+  color: var(--danger);
+}
+
+.formControlsDiv button {
+  margin-right: auto;
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  padding: 6px 24px;
+  border-radius: 8px;
+  transition: background-color 0.1s ease;
+  box-shadow: var(--shadow);
+}
+
+.formControlsDiv button:hover { 
+  cursor: pointer;
+  background-color: var(--secondary);
+}

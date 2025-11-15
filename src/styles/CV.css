@@ -9,6 +9,8 @@
   padding: 32px;
   overflow-x: hidden;
   white-space: nowrap;
+  color: var(--text);
+  max-width: 720px;
 }
 
 .generalInfoCV div{ 
@@ -51,6 +53,35 @@
 
 .AcademicAchievementBtn {
   margin-top: 16px;
+}
+
+.educationAchievementsDiv {
+  margin-top: 16px;
+  padding-left: 1.1rem; 
+}
+
+.educationAchievementsDiv,
+.educationAchievementsDiv li {
+  white-space: normal; /* allow line breaks */
+}
+
+.educationAchievementsDiv li {
+  word-break: break-word;
+  overflow-wrap: anywhere; /* break long words if needed */
+  max-width: 100%;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.educationAchievementsDiv li::marker {
+  font-size: 1.1rem;
+  margin-right: 0.35rem;
+  vertical-align: middle;
 }
 
 #root .AcademicAchievementBottomDiv {

@@ -16,7 +16,6 @@ export default function Education({universityInfo, setStateIndex}) {
         const $uniName = document.getElementById("UniversityName");
         const $uniGPA = document.getElementById("GPA");
         const $uniDOG = document.getElementById("DateOfGraduation");
-
         return $uniName.checkValidity() && $uniGPA.checkValidity() && $uniDOG.checkValidity();
     }
 

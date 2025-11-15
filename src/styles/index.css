@@ -50,6 +50,11 @@ h6 {
   isolation: isolate;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --bg-dark: oklch(0.92 0 130);
   --bg: oklch(0.96 0 130);

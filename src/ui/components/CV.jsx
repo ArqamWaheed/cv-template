@@ -19,6 +19,13 @@ export default function CV({generalInfo, universityInfo}) {
           </div>
           <p>{ universityInfo.GPAValue ? <em>Grade: {universityInfo.GPAValue}</em> : null}</p>
         </div>
+        <div className="educationAchievementsDiv">
+          <ul>
+            {universityInfo.achievements.map(achievement => {
+              return <li>{achievement.text}</li>;
+            })}
+          </ul>
+        </div>
       </div>
   )
 }

@@ -62,12 +62,12 @@
 
 .educationAchievementsDiv,
 .educationAchievementsDiv li {
-  white-space: normal; /* allow line breaks */
+  white-space: normal;
 }
 
 .educationAchievementsDiv li {
   word-break: break-word;
-  overflow-wrap: anywhere; /* break long words if needed */
+  overflow-wrap: anywhere; 
   max-width: 100%;
   display: list-item;
   list-style-type: disc;
@@ -89,5 +89,126 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.skillsCV {
+  margin-top: 32px;
+}
+
+.skillsCV h2 {
+  margin-bottom: 8px;
+}
+
+.skillsListDiv {
+  margin-top: 16px;
+  padding-left: 1.1rem;
+}
+
+.skillsListDiv,
+.skillsListDiv li {
+  white-space: normal;
+}
+
+.skillsListDiv li {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.skillsListDiv li::marker {
+  font-size: 1.1rem;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+#root .SkillBottomDiv {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#root .SkillBottomDiv input {
+  flex-grow: 1;
+}
+
+#root .SkillBottomDiv button {
+  width: 30px;
+  border-radius: 8px;
+  color: var(--bg-dark);
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  transition: transform 0.2s ease;
+}
+
+#root .SkillBottomDiv button:hover {
+  cursor: pointer;
+  transform: translate(1px, -1px);
+}
+
+.AddSkillBtn {
+  width: 100%;
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  padding: 6px 24px;
+  border-radius: 8px;
+  transition: background-color 0.1s ease;
+  box-shadow: var(--shadow);
+}
+
+.AddSkillBtn:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+
+.experienceCV {
+  margin-top: 32px;
+}
+
+.experienceCV h2 {
+  margin-bottom: 16px;
+}
+
+.experienceItem {
+  margin-bottom: 24px;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.experienceHeader h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.experienceDate {
+  font-style: italic;
+  color: var(--text-muted);
+  white-space: normal;
+}
+
+.experienceCompany {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.experienceDescription {
+  margin-top: 8px;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
 }
 

@@ -83,3 +83,76 @@
   cursor: pointer;
   background-color: var(--secondary);
 }
+
+.formDiv textarea {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.ExperienceItem {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  background-color: var(--bg-light);
+}
+
+.ExperienceItemHeader {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0 !important;
+}
+
+.ExperienceItemHeader label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.delExperienceBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: var(--bg-dark);
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.delExperienceBtn:hover {
+  cursor: pointer;
+  transform: translate(1px, -1px);
+}
+
+.ExperienceDateRow {
+  display: flex;
+  flex-direction: row !important;
+  gap: 16px;
+}
+
+.ExperienceDateRow > div {
+  flex: 1;
+}
+
+.AddExperienceBtn {
+  width: 100%;
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  padding: 6px 24px;
+  border-radius: 8px;
+  transition: background-color 0.1s ease;
+  box-shadow: var(--shadow);
+}
+
+.AddExperienceBtn:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+}

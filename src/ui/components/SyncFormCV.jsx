@@ -13,7 +13,8 @@ export default function linkFormCV() {
     const [DOG, setDOG] = useState(""); // Date of Graduation
 
     const [achievements, setAchievements] = useState([]);
-
+    const [skills, setSkills] = useState([]);
+    const [experiences, setExperiences] = useState([]);
     const generalInfo = {
         nameValue,
         setNameValue,  
@@ -38,10 +39,20 @@ export default function linkFormCV() {
         setAchievements,
     }
 
+    const skillsObj = {
+        skills, 
+        setSkills,
+    }
+
+    const experienceObj = {
+        experiences,
+        setExperiences,
+    }
+
     return (
         <>
-            <Form generalInfo={generalInfo} universityInfo={universityInfo}></Form>
-            <CV generalInfo={generalInfo} universityInfo={universityInfo}></CV>    
+            <Form generalInfo={generalInfo} universityInfo={universityInfo} skillsObj={skillsObj} experienceObj={experienceObj}></Form>
+            <CV generalInfo={generalInfo} universityInfo={universityInfo} skillsObj={skillsObj} experienceObj={experienceObj}></CV>    
         </>
     )
 }

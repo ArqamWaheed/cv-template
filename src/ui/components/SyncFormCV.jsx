@@ -8,6 +8,10 @@ export default function linkFormCV() {
     const [countryName, setCountryName] = useState("");
     const [cityName, setCityName] = useState("");
     const [contactNumber, setContactNumber] = useState("");
+    const [universityName, setUniversityName] = useState("");
+    const [GPAValue, setGPAValue] = useState("");
+    const [DOG, setDOG] = useState(""); // Date of Graduation
+
     const generalInfo = {
         nameValue,
         setNameValue,  
@@ -20,10 +24,20 @@ export default function linkFormCV() {
         contactNumber,
         setContactNumber,
     }
+
+    const universityInfo = {
+        universityName, 
+        setUniversityName,
+        GPAValue,
+        setGPAValue,
+        DOG,
+        setDOG,
+    }
+
     return (
         <>
-            <Form generalInfo={generalInfo}></Form>
-            <CV generalInfo={generalInfo}></CV>    
+            <Form generalInfo={generalInfo} universityInfo={universityInfo}></Form>
+            <CV generalInfo={generalInfo} universityInfo={universityInfo}></CV>    
         </>
     )
 }

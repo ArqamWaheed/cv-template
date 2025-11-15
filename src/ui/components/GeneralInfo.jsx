@@ -10,7 +10,7 @@ export default function GeneralInfo({generalInfo, setStateIndex}) {
         if (form) form.reportValidity();
     }
 
-    function validateForm() {
+    function validateForm() { // This was just a concept recap.
         const $fullName = document.getElementById("fullName");
         const $emailId = document.getElementById("emailId");
         const $contactNumber = document.getElementById("contactNumber");

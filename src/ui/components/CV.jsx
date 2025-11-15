@@ -1,4 +1,6 @@
-export default function CV({generalInfo}) {
+import { format, compareAsc } from "date-fns";
+
+export default function CV({generalInfo, universityInfo}) {
   return (
       <div className="CVDiv">
         <div className="generalInfoCV">
@@ -8,6 +10,14 @@ export default function CV({generalInfo}) {
             <p>{generalInfo.contactNumber ? generalInfo.contactNumber + " |" : null}&nbsp;</p>
             <p>{generalInfo.countryName ? generalInfo.countryName + `,` : null} {generalInfo.cityName}</p>
           </div>
+        </div>
+        <div className="educationCV">
+          {universityInfo.universityName ? <h2>EDUCATION</h2> : null}
+          <div>
+            <h3>{universityInfo.universityName}</h3>
+            <h3>{ universityInfo.DOG ? format(universityInfo.DOG, "LLLL") + " " + format(universityInfo.DOG, "yyyy"): null}</h3>
+          </div>
+          <p>{ universityInfo.GPAValue ? <em>Grade: {universityInfo.GPAValue}</em> : null}</p>
         </div>
       </div>
   )

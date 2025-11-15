@@ -1,9 +1,11 @@
-export default function GeneralInfo({generalInfo}) {
+export default function GeneralInfo({generalInfo, setStateIndex}) {
     const { setNameValue, setEmailValue, setCountryName, setCityName, setContactNumber } = generalInfo;
 
     function submissionHandler(event) {
         event.preventDefault();
-        console.log(validateForm());
+        if (validateForm()) {
+            setStateIndex(1);
+        }
         const form = event.target.closest("form");
         if (form) form.reportValidity();
     }
@@ -49,23 +51,23 @@ export default function GeneralInfo({generalInfo}) {
             <legend>General Information</legend>
             <div>
                 <label htmlFor="fullName">Full Name <span className="mandatory">*</span></label>
-                <input minLength={5} type="text" pattern="^[a-zA-Z\s]*$" id="fullName" required aria-required="true" onInput={e => e.target.setCustomValidity('')} onChange={e => setNameValue(e.target.value)}></input>
+                <input minLength={5} type="text" pattern="^[a-zA-Z\s]*$" id="fullName" required aria-required="true" value={generalInfo.nameValue} onInput={e => e.target.setCustomValidity('')} onChange={e => setNameValue(e.target.value)}></input>
             </div>
             <div>
                 <label htmlFor="emailId">Email <span className="mandatory">*</span></label>
-                <input type="email" id="emailId" required aria-required="true" onInput={e => e.target.setCustomValidity('')} onChange={e => setEmailValue(e.target.value) }></input>
+                <input type="email" id="emailId" required aria-required="true" onInput={e => e.target.setCustomValidity('')} value={generalInfo.emailValue} onChange={e => setEmailValue(e.target.value) }></input>
             </div>
             <div>
                 <label htmlFor="contactNumber">Contact Number <span className="mandatory">*</span></label>
-                <input minLength={5} id="contactNumber" required aria-required="true" placeholder="xxx-xxx-xxx" onInput={e => e.target.setCustomValidity('')} onChange={e => setContactNumber(e.target.value)}></input>
+                <input minLength={5} id="contactNumber" required aria-required="true" placeholder="xxx-xxx-xxx" value={generalInfo.contactNumber} onInput={e => e.target.setCustomValidity('')} onChange={e => setContactNumber(e.target.value)}></input>
             </div>
             <div>
                 <label htmlFor="countryName">Country <span className="mandatory">*</span></label>
-                <input minLength={3} type="text" pattern="^[a-zA-Z\s]*$" id="countryName" required aria-required="true" onInput={e => e.target.setCustomValidity('')} onChange={e => setCountryName(e.target.value)}></input>
+                <input minLength={3} type="text" pattern="^[a-zA-Z\s]*$" id="countryName" required aria-required="true" value={generalInfo.countryName} onInput={e => e.target.setCustomValidity('')} onChange={e => setCountryName(e.target.value)}></input>
             </div>
             <div>
                 <label htmlFor="cityName">City <span className="mandatory">*</span></label>
-                <input minLength={3} type="text" pattern="^[a-zA-Z\s]*$" id="cityName"  required aria-required="true"  onInput={e => e.target.setCustomValidity('')} onChange={e => setCityName(e.target.value)}></input>
+                <input minLength={3} type="text" pattern="^[a-zA-Z\s]*$" id="cityName"  required aria-required="true" value={generalInfo.cityName} onInput={e => e.target.setCustomValidity('')} onChange={e => setCityName(e.target.value)}></input>
             </div>
             <div className="formControlsDiv">
                 <button className="generalInfoNextBtn" type="submit" onInput={e => e.target.setCustomValidity('')} onClick={e => submissionHandler(e)}>Next</button>

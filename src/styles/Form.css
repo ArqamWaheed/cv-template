@@ -44,8 +44,25 @@
   color: var(--danger);
 }
 
+#root .formControlsDiv {
+  gap: 16px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.formControlsDiv .PrevBtn {
+  background-color: var(--bg-light);
+  color: var(--text);
+  border: 4px solid var(--primary);
+}
+
+.formControlsDiv .PrevBtn:hover {
+  background-color: var(--bg-gradient-hover);
+  border: 4px solid var(--secondary);
+}
+
 .formControlsDiv button {
-  margin-right: auto;
   border: 1px solid var(--border);
   background-color: var(--primary);
   color: var(--bg-dark);

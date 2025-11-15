@@ -12,6 +12,8 @@ export default function linkFormCV() {
     const [GPAValue, setGPAValue] = useState("");
     const [DOG, setDOG] = useState(""); // Date of Graduation
 
+    const [achievements, setAchievements] = useState([]);
+
     const generalInfo = {
         nameValue,
         setNameValue,  
@@ -32,6 +34,8 @@ export default function linkFormCV() {
         setGPAValue,
         DOG,
         setDOG,
+        achievements,
+        setAchievements,
     }
 
     return (

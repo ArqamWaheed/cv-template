@@ -28,3 +28,35 @@
   display: flex;
   justify-content: space-between;
 }
+
+#AcademicAchievementDiv {
+  margin-top: 0px;
+}
+#root .AcademicAchievementBottomDiv input {
+  flex-grow: 1;
+}
+
+#root .AcademicAchievementBottomDiv button {
+  width: 30px;
+  border-radius: 8px;
+  color: var(--bg-dark);
+  border: 1px solid var(--border);
+  background-color: var(--primary);
+  transition: transform 0.2s ease;
+}
+#root .AcademicAchievementBottomDiv button:hover {
+  cursor: pointer;
+  transform: translate(1px, -1px);
+}
+
+.AcademicAchievementBtn {
+  margin-top: 16px;
+}
+
+#root .AcademicAchievementBottomDiv {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

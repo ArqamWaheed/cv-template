@@ -62,7 +62,9 @@
   border: 4px solid var(--secondary);
 }
 
-.formControlsDiv button {
+
+
+.formControlsDiv button, .AcademicAchievementBtn {
   border: 1px solid var(--border);
   background-color: var(--primary);
   color: var(--bg-dark);
@@ -72,7 +74,12 @@
   box-shadow: var(--shadow);
 }
 
-.formControlsDiv button:hover { 
+.AcademicAchievementBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.formControlsDiv button:hover, .AcademicAchievementBtn:hover { 
   cursor: pointer;
   background-color: var(--secondary);
 }

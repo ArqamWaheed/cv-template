@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .CVDiv {
+  font-family: "Open Sans", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   border: 1px solid var(--border);
   flex-grow: 1;
   background-color: var(--bg);
   height: 80vh;
+  padding: 32px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.generalInfoCV div{ 
+  margin-top: 8px;
+  display: flex;
 }

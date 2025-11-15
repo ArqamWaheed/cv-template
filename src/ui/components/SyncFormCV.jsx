@@ -10,14 +10,19 @@ export default function linkFormCV() {
     const [contactNumber, setContactNumber] = useState("");
     const generalInfo = {
         nameValue,
+        setNameValue,  
         emailValue,
+        setEmailValue,   
         countryName,
+        setCountryName,
         cityName,
+        setCityName,
         contactNumber,
+        setContactNumber,
     }
     return (
         <>
-            <Form generalInfo={generalInfo} setNameValue={setNameValue}></Form>
+            <Form generalInfo={generalInfo}></Form>
             <CV generalInfo={generalInfo}></CV>    
         </>
     )

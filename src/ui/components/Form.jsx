@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import GeneralInfo from './GeneralInfo'
 
-export default function Form({generalInfo, setNameValue}) {
+export default function Form({generalInfo}) {
     
   return (
-    <div class="formDiv">
-        <form action="" autocomplete="off">
-            <GeneralInfo generalInfo={generalInfo} setNameValue={setNameValue}></GeneralInfo>
+    <div className="formDiv">
+        <form action="" autoComplete="off">
+            <GeneralInfo generalInfo={generalInfo}></GeneralInfo>
         </form>
     </div>
   )
